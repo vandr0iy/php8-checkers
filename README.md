@@ -99,4 +99,14 @@ git branch -M master
 git push -u origin master
 
 ```
+
+## Few nifty things
+
+- run `menu` to see a list of inbuilt shorthand commands [you can add
+  yourself](https://github.com/numtide/devshell/blob/master/docs/getting_started.md)
+
+TODO: move this thing to use the devshell.toml file
+TODO: call this origin something like `devtemplate` and set a command to pull regularly
+
+
 Big thanks to [the guy I've originally stole this thing from](https://github.com/adam-webee/php8-base-project).
