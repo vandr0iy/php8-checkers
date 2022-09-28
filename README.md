@@ -76,9 +76,17 @@ If you only want to see all violations just run this command:
 * https://getcomposer.org/doc/
 * https://packagist.org
 
+## Install nix + direnv
+
+1. Download Nix package manager: https://nixos.org/download.html
+2. Turn on flakes support: https://nixos.wiki/wiki/Flakes#Non-NixOS
+3. Install nix-direnv: `nix-env -f '<nixpkgs>' -iA nix-direnv`
+4. Start a new shell, go to project root and run: `direnv allow`
+
 # Set up a new repo
 
 Assuming here you've got installed nix, direnv, and nix-direnv.
+
 ```
 USER=<your-github-username>
 NAME=<your-new-repo-name-here>
