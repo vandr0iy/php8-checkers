@@ -75,3 +75,20 @@ If you only want to see all violations just run this command:
 ### Dependency management
 * https://getcomposer.org/doc/
 * https://packagist.org
+
+# Set up a new repo
+
+Assuming here you've got installed nix, direnv, and nix-direnv.
+```
+USER=<your-github-username>
+NAME=<your-new-repo-name-here>
+git clone git@gitlab.com:volodhrim/php8-template.git "${NAME}"
+direnv allow
+
+git remote rename origin old-origin
+git remote add origin "git@github.com:${USER}/${NAME}.git"
+git branch -M master
+git push -u origin master
+
+```
+Big thanks to [the guy I've originally stole this thing from](https://github.com/adam-webee/php8-base-project).
